@@ -1,0 +1,42 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>validation</title>
+</head>
+<body>
+    <div>simple validation</div><br />
+    <form name="login">
+        <div>
+            <input type="text" placeholder="type yor user ID" name="userid" /><br /><br /><br /> 
+            <input type="password" placeholder="type password" name="pswrd" /><br /><br /><br /> 
+            <input type="button" onclick="check(this.form)" value="login" /><br /><br /><br />
+
+        </div>
+
+
+
+    </form>
+    <script language="javascript">
+        function check(form) {
+            if (form.userid.value == "js" && form.pswrd.value == "1234") {
+              
+                 window.open("wellcome.html", "width=800,height=600");
+
+            }
+            else {
+                alert("please type the inputs correctly")
+            }
+        }
+
+
+
+    </script>
+
+
+
+
+
+
+</body>
+</html>
